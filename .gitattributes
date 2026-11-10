@@ -1,0 +1,23 @@
+# Default: let Git detect text files and store them with LF
+* text=auto eol=lf
+
+# Always LF: scripts and IaC must run in Bash / Cloud Shell
+*.sh      text eol=lf
+*.bicep   text eol=lf
+*.json    text eol=lf
+*.md      text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+
+# Windows-only scripts keep CRLF
+*.ps1     text eol=crlf
+*.cmd     text eol=crlf
+*.bat     text eol=crlf
+
+# Binary: never touch
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.pdf     binary
+*.drawio  text eol=lf

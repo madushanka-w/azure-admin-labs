@@ -1,0 +1,23 @@
+# Secrets: never commit
+.env
+*.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.publishsettings
+*.parameters.local.json
+sas-*.txt
+
+# Azure CLI / local state
+.azure/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+
+# Logs
+*.log
